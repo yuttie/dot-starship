@@ -1,0 +1,56 @@
+# Disable modules
+cmake.disabled = true
+crystal.disabled = true
+dart.disabled = true
+dotnet.disabled = true
+elixir.disabled = true
+elm.disabled = true
+erlang.disabled = true
+golang.disabled = true
+helm.disabled = true
+java.disabled = true
+julia.disabled = true
+kotlin.disabled = true
+lua.disabled = true
+nim.disabled = true
+nodejs.disabled = true
+ocaml.disabled = true
+perl.disabled = true
+php.disabled = true
+purescript.disabled = true
+python.disabled = true
+ruby.disabled = true
+rust.disabled = true
+swift.disabled = true
+vagrant.disabled = true
+zig.disabled = true
+
+[aws]
+disabled = true
+
+[character]
+success_symbol = "[❯❯❯](bold green)"
+error_symbol   = "[❯❯❯](bold red)"
+vicmd_symbol   = "[❮❮❮](bold green)"
+
+[cmd_duration]
+#format = "[ $duration ](fg:black bg:yellow bold)"
+min_time = 0
+show_milliseconds = true
+show_notifications = false
+min_time_to_notify = 3_000
+style = "purple"
+
+[directory]
+#format = "[ $path[$read_only]($read_only_style bg:white) ](fg:black bg:white)"
+style = "bold blue"
+fish_style_pwd_dir_length = 2
+truncate_to_repo = false
+
+[status]
+disabled = false
+
+[time]
+disabled = false
+format = "[$time]($style) "
+style = "bold white"
