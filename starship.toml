@@ -1,32 +1,98 @@
 # Disable modules
+aws.disabled = true
+azure.disabled = true
+buf.disabled = true
+bun.disabled = true
+c.disabled = true
 cmake.disabled = true
+cobol.disabled = true
+conda.disabled = true
+container.disabled = true
 crystal.disabled = true
+daml.disabled = true
 dart.disabled = true
+deno.disabled = true
+docker_context.disabled = true
 dotnet.disabled = true
 elixir.disabled = true
 elm.disabled = true
 erlang.disabled = true
+fennel.disabled = true
+fossil_branch.disabled = true
+gcloud.disabled = true
+git_branch.disabled = true
+git_commit.disabled = true
+git_metrics.disabled = true
+git_state.disabled = true
+git_status.disabled = true
 golang.disabled = true
+gradle.disabled = true
+guix_shell.disabled = true
+haskell.disabled = true
+haxe.disabled = true
 helm.disabled = true
+hg_branch.disabled = true
 java.disabled = true
 julia.disabled = true
 kotlin.disabled = true
+kubernetes.disabled = true
 lua.disabled = true
+meson.disabled = true
 nim.disabled = true
+nix_shell.disabled = true
 nodejs.disabled = true
 ocaml.disabled = true
+opa.disabled = true
+openstack.disabled = true
+package.disabled = true
 perl.disabled = true
 php.disabled = true
+pijul_channel.disabled = true
+pulumi.disabled = true
 purescript.disabled = true
 python.disabled = true
+raku.disabled = true
+red.disabled = true
+rlang.disabled = true
 ruby.disabled = true
 rust.disabled = true
+scala.disabled = true
+singularity.disabled = true
+spack.disabled = true
+sudo.disabled = true
 swift.disabled = true
+terraform.disabled = true
 vagrant.disabled = true
+vcsh.disabled = true
+vlang.disabled = true
 zig.disabled = true
 
-[aws]
-disabled = true
+# [Prompt]
+format = """
+$username\
+$hostname\
+$localip\
+$shlvl\
+$directory\
+$buf\
+$memory_usage\
+$env_var\
+$custom\
+$sudo\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$os\
+$shell\
+$character\
+"""
+right_format = ''
+scan_timeout = 30
+command_timeout = 100
+add_newline = true
 
 [character]
 success_symbol = "[❯❯❯](bold green)"
@@ -41,6 +107,10 @@ show_notifications = false
 min_time_to_notify = 3_000
 style = "purple"
 
+[hostname]
+ssh_symbol = "🌏 "
+style = "bold dimmed cyan"
+
 [directory]
 #format = "[ $path[$read_only]($read_only_style bg:white) ](fg:black bg:white)"
 style = "bold blue"
@@ -54,3 +124,7 @@ disabled = false
 disabled = false
 format = "[$time]($style) "
 style = "bold white"
+
+[username]
+style_user = "bold cyan"
+show_always = true
