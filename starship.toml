@@ -20,11 +20,11 @@ erlang.disabled = true
 fennel.disabled = true
 fossil_branch.disabled = true
 gcloud.disabled = true
-git_branch.disabled = true
-git_commit.disabled = true
-git_metrics.disabled = true
-git_state.disabled = true
-git_status.disabled = true
+git_branch.disabled = false
+git_commit.disabled = false
+git_metrics.disabled = false
+git_state.disabled = false
+git_status.disabled = false
 golang.disabled = true
 gradle.disabled = true
 guix_shell.disabled = true
@@ -68,27 +68,6 @@ vlang.disabled = true
 zig.disabled = true
 
 # [Prompt]
-format = """
-$username\
-$hostname\
-$localip\
-$shlvl\
-$directory\
-$buf\
-$memory_usage\
-$env_var\
-$custom\
-$sudo\
-$cmd_duration\
-$line_break\
-$jobs\
-$battery\
-$time\
-$status\
-$os\
-$shell\
-$character\
-"""
 right_format = ''
 scan_timeout = 30
 command_timeout = 100
